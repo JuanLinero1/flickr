@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0; 
+    
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+/* Header-Logo */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 3.75rem;
+    padding: 0 1.25rem;
+    
+    background: rgba(0,0,0,0.7);
+}
+
+header .logoContainer .sideLogo{
+    width: 30px;
+    
+    transform: rotate(-10deg);
+}
+header .logoContainer .logo{ width: 80px; }
+/* Header-Input */
+header .searchBar{
+    width: 50rem;
+    height: 2.1rem;
+    
+    position: relative;
+}
+
+header .searchBar .icon{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    
+    scale: 1.1s;
+    
+    opacity: 0.7;
+}
+header .searchBar .textInput{
+    width: 100%;
+    height: 100%;
+    
+    padding-left: 2.1875rem;
+}
+header .btnContainer{
+    display: flex;
+    flex-wrap: nowrap;
+}
+header .btnContainer .btn{
+    width: 6.0625rem;
+    height: 2.3125rem;
+    cursor: pointer;
+
+} 
+header .btnContainer .btn:active{ transform: scale(0.98); }
+header .btnContainer .btn1{
+    background: transparent;
+    color: white;
+    
+    border: none;
+
+}
+header .btnContainer .btn2{
+    color: black;
+    background: white;
+
+    border: 1px black solid;
+    border-radius: 5px;
+    
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+/* FIRST SECTION (LAND PAGE) */
+main{ width: 100vw; }
+section.landPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80vh;
+    
+}
+section.landPage .info{
+    width: 650px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+    text-align: center;
+}
+
+section.landPage h1{
+    font-size: 56px;
+    font-weight: 600;
+
+    color: white;
+}
+section.landPage h3{
+    font-size: 26px;
+
+    color: white
+}
+section.landPage button{    
+    height: 64px;
+    width: 200px;
+    
+    font-size: 22px;
+    font-weight: 600;
+
+    color: black;
+    background-color: white;
+    
+    border: none;
+    border-radius: 5px;
+
+    margin-top: 20px;
+    
+    cursor: pointer;
+}
+section.landPage button:hover{
+    color: rgba(0, 0, 0, 0.4);
+    transition: all 200ms ease; 
+    border: none;
+}
+section.landPage button:active{
+    transform: scale(0.98); 
+}
+section.landPage .slider{ 
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section.landPage .slider img{
+    position: absolute;
+    z-index: 100;
+}
+
+/* FOOTER */
+footer{
+    height: 65px;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: black;
+
+    height: 100%;
+}
+
+footer .container h5, 
+footer .container h5 a,
+footer .container a .icon{
+    color: rgba(255, 255, 255, 0.6); 
+    text-decoration: none;
+}
+
+footer .container h5 a:hover, 
+footer .container a .icon:hover{
+    color: white;
+}
+
+footer .container .icon{ 
+    font-size: 25px;
+}
