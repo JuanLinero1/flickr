@@ -1,10 +1,10 @@
 const slider = document.querySelector(".slider")
 
 const images = [
-    "/images/transitionImages/image1.jpg",
-    "/images/transitionImages/images2.jpg",
-    "/images/transitionImages/images3.jpg",
-    "/images/transitionImages/images4.jpg",
+    "./images/transitionImages/image1.jpg",
+    "./images/transitionImages/images2.jpg",
+    "./images/transitionImages/images3.jpg",
+    "./images/transitionImages/images4.jpg",
 ]
 
 let num = 0
